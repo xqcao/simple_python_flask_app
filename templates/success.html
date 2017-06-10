@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>show messages</title>
+</head>
+
+<body>
+  <a href="/">Back</a>
+  <p>show All messages</p>
+  <ol>
+    {% for mm in messages %}
+    <li>{{mm.name}} {{mm.message}}</li>
+    {% endfor %}
+  </ol>
+</body>
+
+</html>
